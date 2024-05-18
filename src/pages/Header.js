@@ -36,7 +36,6 @@ export const Header = (props) => {
 
   const handleAuth = () => {
     if (!userName) {
-      // Use GoogleAu thProvider to create the provider and then call signInWithPopup
       signInWithPopup(auth, new GoogleAuthProvider())
         .then((result) => {
           setUser(result.user);
